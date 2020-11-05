@@ -1,0 +1,6 @@
+{
+    "name" : "web-page-loader",
+    "version" : "0.0.1",
+    "description" : "basic web page fetcher",
+    "dependencies" : {}
+}

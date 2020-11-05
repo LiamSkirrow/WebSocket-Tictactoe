@@ -1,0 +1,88 @@
+head,body{
+    background-color:grey;  /* TODO: find an aesthetic background for this project */
+    font: 13px Helvetica, Arial;
+}
+
+#header{
+    background-color:black;
+    color:white;
+    align-items: center;
+}
+
+#block{
+    display: inline-block;
+    position: fixed;
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#messageList{
+    list-style-type: none; 
+    height: 300px;
+    overflow: auto;
+    margin: 0; 
+    padding: 0;
+}
+
+#messageList li {
+    padding: 5px 10px;
+}
+
+#receivedMessage{
+    position: absolute;
+    background-color: grey;
+}
+
+#chatWindow{
+    display: inline-block;
+    position: absolute;
+}
+
+#textArea{
+    display: inline-block;
+    position: absolute;
+    width: 225px;
+    height: 300px;
+    top: 50%;
+    transform: translate(10%, 10%);
+    margin: 0;
+
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#typeArea{
+    position: absolute;
+    transform: translate(14%, 790%);
+}
+
+#canvas{
+    display: inline-block;
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    top: 50%;
+    left: 300px;
+    transform: translate(10%,-50%);
+    margin: 0;
+}
+
+#cell{
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}

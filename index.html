@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>0's and X's</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./server.js"> </script>
+        <script src="./game.js"> </script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+        
+        <h1 id="header"> <!-- Tic Tac Toe! --> </h1>  <!-- maybe here display the total wins/losses/win-to-loss % -->
+    </head>
+    
+    <body>
+        <div id="block">
+            <div id="chatWindow" >
+                <div id="textArea"> 
+                    <ul id="messageList" > </ul>
+                </div>
+                <form id="typeArea" onsubmit="return false;">
+                    <input id="message" autocomplete="off" />
+                    <input id="submitButton" type="button" value="Send" />
+                </form>
+            </div> 
+            <div id="canvas" class="canvasClass" >
+                <div id="cell" class="cells"> </div>
+            </div>
+            <div id="whoseTurn"> </div>
+        </div>
+    </body>
+</html>
